@@ -2,11 +2,20 @@
 /* CSS Document */
 html {
     height: 100%;
+	font-family: Segoe UI;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
 }
 
 body {
-    height: 100%;
-    margin: 0;
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+	position: relative;
+	z-index: 0;
+	display: block;
     background-repeat: no-repeat;
     background-attachment: fixed;
 	background: #E0E6EF; /* Для старых браузров */
@@ -16,15 +25,44 @@ body {
 
 
 .blocks {
-   min-width: 800px; 
-   min-height: 400px; 
+	display: block;
+	width: 500px;
+	height: 200px;
+    min-width: 100%; 
+    min-height: 100%; 
    -webkit-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
    -moz-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
    box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
 }
 
+.main {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	top: 50%;
+}
+
+.maintext {
+	vertical-align: middle;
+	padding: 10px;
+	color: #000;
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+}
+
+.maintext10 {
+	vertical-align: middle;
+	padding: 10px;
+	color: #c55a11;
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+}
+
 #div-test {
 	display:none;
+	background: #FFF;
 	width: 200px;
 	height: 200px;
 	padding: 10px;
