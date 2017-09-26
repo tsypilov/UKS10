@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pre</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--<script src="js/main.js"></script>-->
+    <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+    <script>$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
+							    items: 1,
+							    center: true,
+							    loop:true, //Зацикливаем слайдер
+								dots: false,
+								slideBy: 1,
+                                margin: 400, //Отступ от элемента справа в 50px
+                                nav:true, //Отключение навигации
+				                navText: ["<", ">"],
+                                /*autoplay:true, //Автозапуск слайдера*/
+								smartSpeed: 500,
+				                startPosition: 0,
+				                autoWidth: true,
+							   });
+});
+</script>
+<script>$(function(){
+    $('#new-ref').mouseenter(function(){ // Навели на ссылку?
+      $( "#div-test" ).show(); // Показываем блок
+    });
+
+    $('#new-ref,#div-test').mouseleave(function(e){
+    if (e.relatedTarget.id == 'new-ref' || e.relatedTarget.id == 'div-test') return;
+    if ($('#login').val() || $('#password').val()) return;
+    $('#div-test').hide();
+});
+   
+    $(document).click(function(e){ // Функция скрывает элемент если произошёл клик в не поля #div-test
+            if ($(e.target).closest('#div-test').length) return;  // Не знаю что тут происходит
+            $('#div-test').hide(); // Скрываем блок
+            e.stopPropagation(); // Не знаю что тут происходит
+        });
+    
+});</script>
+    <!--<link rel="stylesheet" href="css/styles.css">-->
+  </head>
+  <body>
+    <div class="owl-carousel owl-theme">
+    
+    <div class="blocks">
+    <h4>2007</h4></br>
+    <div id="new-ref">Стори от Саши Батиной</div>>
+    <div id="div-test"><div>Какая-то стори</div></div></br></div>
+    <div id="new-ref">Стори от Ксюши Скачковой</div>>
+    <div id="div-test"><div>Какая-то стори</div></div></br></div>
+    <div id="new-ref">Стори от Жени Гиленюк</div>>
+    <div id="div-test"><div>Какая-то стори</div></div></br></div>
+    <div class="blocks">2010</br></br></div>
+    <div class="blocks">2013</br></br></div>
+    <div class="blocks">2015</br></br></div>
+    <div class="blocks">2017</br></br></div>
+    
+</div>
+  </body>
+</html>
