@@ -21,19 +21,19 @@ function getInternetExplorerVersion()
 if(getInternetExplorerVersion()==-1){
 
 $(function () {
-	  $('.real-show-hint').on("click", function(e){ 
+	  $('.real-show-hint1').on("click", function(e){ 
 	  	e = e || window.event; 
 	  	e.preventDefault();
 	  	var ypos = $(this).offset().top+10;
 	  	var xpos = $(this).offset().left;
-	  	var RealHint =  $(this).data('hint');
+	  	var RealHint =  $(this).data('hint1');
 	  	$(RealHint).css('top',ypos);
 	  	$(RealHint).css('left',xpos);
 	  	$(RealHint).toggle('fast'); 
 	  	return; 
 	  	});
 
-	  $('.prm-cross').on('click', function(){ 
+	  $('.prm-cross1').on('click', function(){ 
 	  	$(this).parent().hide('fast'); 
 	  	return false; 
 	  });
@@ -41,13 +41,13 @@ $(function () {
 }
 else {
 $(function(){
-    $('.real-show-hint').on("click", function(){
-      $( ".real-hint" ).show(); 
-	  $( ".real-hint" ).css('left', '30%'); 
+    $('.real-show-hint1').on("click", function(){
+      $( ".real-hint1" ).show(); 
+	  $( ".real-hint1" ).css('right', '30%'); 
     });
     $(document).click(function(e){ 
-            if ($(e.target).closest('.real-show-hint').length) return;
-            $('.real-hint').hide();
+            if ($(e.target).closest('.real-show-hint1').length) return;
+            $('.real-hint1').hide();
             e.stopPropagation();
         });
     

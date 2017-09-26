@@ -2,6 +2,8 @@
 /* CSS Document */
 html {
     height: 100%;
+	width: 100%;
+	margin-right: -5%;
 	font-family: Segoe UI;
 	font-size: 14px;
 	font-weight: 100;
@@ -11,7 +13,7 @@ html {
 
 body {
 	overflow: hidden;
-	overflow-y: auto;
+	width: 102%;
 	position: relative;
 	z-index: 0;
 	display: block;
@@ -21,6 +23,34 @@ body {
     background: linear-gradient(to top, #E0E6EF, #FFF);
 	-webkit-gradient(linear, left top, left bottom, from(#E0E6EF), to(#FFF)) fixed;
 }
+
+nav {
+	width: 102%;
+	height: 50px;
+	margin-top: -1%;
+	margin-left: -2%;
+	margin-right: -10%;
+	margin-bottom: 1%;
+	padding: 1%;
+	-webkit-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
+    -moz-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
+    box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
+}
+
+nav .uks {
+	position: absolute;
+	max-width: 70px;
+	max-height: 70px;
+	min-height: 100%;
+}
+
+nav .uks img{
+margin-top: -10%;
+padding-left: 35%; 
+width:100%;
+height:100%;
+}
+
 
 
 .blocks {
@@ -106,29 +136,36 @@ body {
 	font-weight: normal;
 }
 
-#div-test {
-	display:none;
-	position: relative;
+.fs2 {
+	position: absolute;
 	background: #FFF;
-	width: 200px;
-	height: 200px;
 	padding: 10px;
-	margin-top: 26px;
-	-webkit-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
-    -moz-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
-    box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
+	right: 5%;
+	top: 60%;
+	width: 100px;
+	height: 100px;
+	float: right;
 }
 
-#new-ref {
-	width: 200px;
-	height: 20px;
-	padding: 20px;
-	margin-top: 26px;
-	float: left;
+.fs2_2 {
+	display: block;
 	background: #FFF;
-	-webkit-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
-    -moz-box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
-    box-shadow: 1px 1px 10px 2px rgba(158,158,158,0.41);
+	padding: 10px;
+	padding-top: 25%;
+	padding-right: 20%;
+	width: 30%;
+	height: 50%;
+	float: right;
+	text-align: center;
+}
+
+.fs2_2 span {
+	display: inline-block;
+	position: absolute;
+	top: 75%;
+	right: 29%;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 .real-hint {
@@ -172,3 +209,47 @@ body {
 	left: 53%;
 	font-size: 18px;
 	}
+	
+.real-hint1 {
+	  border-radius: 10px;
+	  display: none;
+	  padding: 5px 10px;
+	  position: absolute;
+	  padding-right: 17%;
+	  padding-top: 17%;
+	  width: 40%;
+	  z-index: 99;
+	}
+
+	.real-hint1 .hint1-caption {
+		font-size: 24px;
+		text-transform: uppercase;
+		position: absolute;
+		top: 50%;
+		right: 55%;
+		font-weight: normal;
+	}
+
+	.real-hint1 .prm-cross1 {
+		background: url("/img/cross.jpg") no-repeat scroll right top rgba(0, 0, 0, 0);
+		cursor: pointer;
+		float: right;
+		height: 16px;
+		margin-top: 3px;
+		padding-right: 13px;
+		right: 10px;
+		width: 16px;
+	}
+
+	.real-show-hint1 {
+		cursor: pointer;
+	}
+	
+	.hint1-content {
+		display: inline-block;
+	position: absolute;
+	bottom: 20%;
+	right: 53%;
+	font-size: 18px;
+	}	
+	
