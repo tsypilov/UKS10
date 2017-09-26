@@ -12,18 +12,33 @@
     <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
     <script>$(document).ready(function(){
 $('.owl-carousel').owlCarousel({
-							    items: 1,
+								responsive:{ //Адаптация в зависимости от разрешения экрана
+									0:{
+										items:1
+									},
+									600:{
+										items:1
+									},
+									1000:{
+										items:1
+									}
+								},
 							    center: true,
+								itemsDesktop: 1,
+								slideBy: 'side',
 							    loop:true, //Зацикливаем слайдер
 								dots: false,
 								slideBy: 1,
-                                margin: 400, //Отступ от элемента справа в 50px
+                                margin: 100, //Отступ от элемента справа в 50px
                                 nav:true, //Отключение навигации
 				                navText: ["<", ">"],
                                 /*autoplay:true, //Автозапуск слайдера*/
 								smartSpeed: 500,
+								scrollPerPage: false,
 				                startPosition: 0,
-				                autoWidth: true,
+								autoHeight: true,
+								autoWidth: true,
+								responsiveBaseWidth: window,
 							   });
 });
 </script>
@@ -58,24 +73,27 @@ $(window).load(function(){
   </head>
   <body>
     <div class="owl-carousel owl-theme">
-    <div align="center" style="vertical-align: middle;" class="blocks">
+    <div align="center" style="vertical-align: bottom;" class="blocks">
     	<div class="main">
-        <span class="maintext">Управление клиентского сервиса</span></br>
-        <span class="maintext10">10 лет</span>
-        </div>
+        <div class="maintext">Управление клиентского сервиса</div></br>
+        <div class="maintext10">10 лет</div></br>
+        <div class="rocket"><img src="img/rocket.png"></div>
+    	</div>
     </div>
     <div class="blocks">
-    <span>2007<span></br>
+    <div class="maintext">2007</div></br>
     <div id="new-ref">Стори от Саши Батиной</div>
-    <div id="div-test"><div>Какая-то стори</div></div></div>
+    <div id="div-test"><div>Какая-то стори</div>
+    </div>
+    </div>
 <!--    <div id="new-ref">Стори от Ксюши Скачковой</div>>
     <div id="div-test"><div>Какая-то стори</div></div></br></div>
     <div id="new-ref">Стори от Жени Гиленюк</div>>
     <div id="div-test"><div>Какая-то стори</div></div></br></div>-->
-    <div class="blocks">2010</br></br></div>
-    <div class="blocks">2013</br></br></div>
-    <div class="blocks">2015</br></br></div>
-    <div class="blocks">2017</br></br></div>
+    <div class="blocks"><div class="maintext">2010</div></br></br></div>
+    <div class="blocks"><div class="maintext">2013</br></br></div></div>
+    <div class="blocks"><div class="maintext">2015</br></br></div></div>
+    <div class="blocks"><div class="maintext">2017</br></br></div></div>
     
 </div>
   </body>
