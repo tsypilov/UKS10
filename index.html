@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pre</title>
+    <title>Управление Клиентского сервиса - 10 лет!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!--<script src="js/main.js"></script>-->
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
-    <script>$(document).ready(function(){
-$('.owl-carousel').owlCarousel({
-								responsive:{ //Адаптация в зависимости от разрешения экрана
+    <script src="jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <script>$(document).ready(function(){								
+$('.owl-carousel').each(function(i) {
+    var owl = $(this);
+    owl.owlCarousel({
+        responsive:{ //Адаптация в зависимости от разрешения экрана
 									0:{
 										items:1
 									},
@@ -38,8 +41,17 @@ $('.owl-carousel').owlCarousel({
 				                startPosition: 0,
 								autoHeight: true,
 								autoWidth: true,
-								responsiveBaseWidth: window,
+								responsiveBaseWidth: window, 
 							   });
+			owl.on('mousewheel', '.owl-stage', function (e) {
+				if (e.deltaY>0) {
+					owl.trigger('next.owl');
+				} else {
+					owl.trigger('prev.owl');
+				}
+				e.preventDefault();
+			});
+});
 });
 </script>
 <script>$(function(){
