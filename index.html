@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
     <script src="jquery-mousewheel-master/jquery.mousewheel.min.js"></script>
+    <script src="lightbox.js"></script>
     <script>$(document).ready(function(){								
 $('.owl-carousel').each(function(i) {
     var owl = $(this);
@@ -54,24 +55,6 @@ $('.owl-carousel').each(function(i) {
 });
 });
 </script>
-<script>$(function(){
-    $('#new-ref').mouseenter(function(){ // Навели на ссылку?
-      $( "#div-test" ).show(); // Показываем блок
-    });
-
-    $('#new-ref,#div-test').mouseleave(function(e){
-    if (e.relatedTarget.id == 'new-ref' || e.relatedTarget.id == 'div-test') return;
-    if ($('#login').val() || $('#password').val()) return;
-    $('#div-test').hide();
-});
-   
-    $(document).click(function(e){ // Функция скрывает элемент если произошёл клик в не поля #div-test
-            if ($(e.target).closest('#div-test').length) return;  // Не знаю что тут происходит
-            $('#div-test').hide(); // Скрываем блок
-            e.stopPropagation(); // Не знаю что тут происходит
-        });
-    
-});</script>
 <!--<script>
 $(window).load(function(){
 	$('#owl-carousel').liCover({
@@ -94,8 +77,13 @@ $(window).load(function(){
     </div>
     <div class="blocks">
     <div class="maintext">2007</div></br>
-    <div id="new-ref">Стори от Саши Батиной</div>
-    <div id="div-test"><div>Какая-то стори</div>
+    <div class="fs1"><img src='img/people/circle (10).png'></div>
+    <span class="real-show-hint" data-hint="#real-hint-1"><div class="fs1_1"><img src="img/cloud.png"><span>2007 год</br>Появление УКС</span></div></span>
+    <div id="real-hint-1" class="real-hint">
+	<div class="prm-cross"><img src="img/cross.jpg"></div>
+	<span class="hint-caption">Начало</span><br/>
+    <img src="img/cloud.png">
+		<span class="hint-content">История Саши</span>
     </div>
     </div>
 <!--    <div id="new-ref">Стори от Ксюши Скачковой</div>>
