@@ -97,6 +97,34 @@ height:100%;
 	width: 27%;
 }
 
+.rocket1 {
+	position: absolute;
+	margin-left: 500px;
+	float: right;
+	height: 200px;
+	width: 270px;
+}
+
+.people {
+	font-size: 24px;
+	position: absolute;
+	margin-top: 300px;
+	margin-left: -320px;
+	float: left;
+}
+
+.people strong {
+	color: #c55a11;
+}
+
+.gasel {
+	font-size: 24px;
+	position: absolute;
+	margin-top: 220px;
+	margin-left: 150px;
+	float: left;
+}
+
 .mfox {
 	float: right;
 	height: 25%;
@@ -169,21 +197,20 @@ height:100%;
 }
 
 .real-hint {
-	  border-radius: 10px;
 	  display: none;
-	  padding: 5px 10px;
 	  position: absolute;
-	  padding-left: 15%;
-	  width: 40%;
+	  padding: 5px 10px;
+	  padding-left: 150px;
+	  margin-top: -100px;
+	  width: 400px;
 	  z-index: 99;
 	}
 
 	.real-hint .hint-caption {
 		font-size: 24px;
-		text-transform: uppercase;
 		position: absolute;
-		top: 25%;
-		left: 55%;
+		top: 70px;
+		left: 250px;
 		font-weight: normal;
 	}
 
@@ -205,8 +232,8 @@ height:100%;
 	.hint-content {
 		display: inline-block;
 	position: absolute;
-	bottom: 40%;
-	left: 53%;
+	bottom: 70px;
+	left: 220px;
 	font-size: 18px;
 	}
 	
@@ -215,9 +242,9 @@ height:100%;
 	  display: none;
 	  padding: 5px 10px;
 	  position: absolute;
-	  padding-right: 17%;
-	  padding-top: 17%;
-	  width: 40%;
+	  margin-left: -200px;
+	  padding-top: 70px;
+	  width: 400px;
 	  z-index: 99;
 	}
 
