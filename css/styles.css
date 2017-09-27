@@ -205,6 +205,16 @@ height:100%;
 	  width: 400px;
 	  z-index: 99;
 	}
+	
+.section:hover .real-hint {
+	  display: block;
+	  position: absolute;
+	  padding: 5px 10px;
+	  padding-left: 150px;
+	  margin-top: -100px;
+	  width: 400px;
+	  z-index: 99;
+	}
 
 	.real-hint .hint-caption {
 		font-size: 24px;

@@ -43,7 +43,6 @@ else {
 $(function(){
     $('.real-show-hint1').on("click", function(){
       $( ".real-hint1" ).show(); 
-	  $( ".real-hint1" ).css('right', '30%'); 
     });
     $(document).click(function(e){ 
             if ($(e.target).closest('.real-show-hint1').length) return;
