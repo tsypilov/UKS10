@@ -200,18 +200,8 @@ height:100%;
 	  display: none;
 	  position: absolute;
 	  padding: 5px 10px;
-	  padding-left: 150px;
-	  margin-top: -100px;
-	  width: 400px;
-	  z-index: 99;
-	}
-	
-.section:hover .real-hint {
-	  display: block;
-	  position: absolute;
-	  padding: 5px 10px;
-	  padding-left: 150px;
-	  margin-top: -100px;
+	  padding-left: 450px;
+	  margin-top: -20px;
 	  width: 400px;
 	  z-index: 99;
 	}
@@ -252,8 +242,8 @@ height:100%;
 	  display: none;
 	  padding: 5px 10px;
 	  position: absolute;
-	  margin-left: -200px;
-	  padding-top: 70px;
+	  margin-left: 100px;
+	  margin-top: 200px;
 	  width: 400px;
 	  z-index: 99;
 	}
@@ -288,5 +278,4 @@ height:100%;
 	bottom: 20%;
 	right: 53%;
 	font-size: 18px;
-	}	
-	
+	}

@@ -1,54 +1,16 @@
-function getInternetExplorerVersion()
-                            {
-                                var rv = -1;
-                                if (navigator.appName == 'Microsoft Internet Explorer')
-                                {
-                                    var ua = navigator.userAgent;
-                                    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-                                    if (re.exec(ua) != null)
-                                        rv = parseFloat( RegExp.$1 );
-                                }
-                                else if (navigator.appName == 'Netscape')
-                                {
-                                    var ua = navigator.userAgent;
-                                    var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
-                                    if (re.exec(ua) != null)
-                                        rv = parseFloat( RegExp.$1 );
-                                }
-                                return rv;
-                            }
-							
-if(getInternetExplorerVersion()==-1){
-
-$(function () {
-	  $('.real-show-hint').on("click", function(e){ 
-	  	e = e || window.event; 
-	  	e.preventDefault();
-	  	var ypos = $(this).offset().top+10;
-	  	var xpos = $(this).offset().left;
-	  	var RealHint =  $(this).data('hint');
-	  	$(RealHint).css('top',ypos);
-	  	$(RealHint).css('left',xpos);
-	  	$(RealHint).toggle('fast'); 
-	  	return; 
-	  	});
-
-	  $('.prm-cross').on('click', function(){ 
-	  	$(this).parent().hide('fast'); 
-	  	return false; 
-	  });
-	});
-}
-else {
 $(function(){
-    $('.real-show-hint').on("click", function(){
-      $( ".real-hint" ).show(); 
+    $('.fs1_1').mouseenter(function(){ // Навели на ссылку?
+      $( ".real-hint" ).show(); // Показываем блок
     });
-    $(document).click(function(e){ 
-            if ($(e.target).closest('.real-show-hint').length) return;
-            $('.real-hint').hide();
-            e.stopPropagation();
+
+    $('.real-hint').mouseleave(function(e){
+    $('.real-hint').hide();
+});
+   
+    $(document).click(function(e){ // Функция скрывает элемент если произошёл клик в не поля #div-test
+            if ($(e.target).closest('.real-hint').length) return;  // Не знаю что тут происходит
+            $('.real-hint').hide(); // Скрываем блок
+            e.stopPropagation(); // Не знаю что тут происходит
         });
     
 });
-};
