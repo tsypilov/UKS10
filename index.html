@@ -17,17 +17,6 @@
 $('.owl-carousel').each(function(i) {
     var owl = $(this);
     owl.owlCarousel({
-        responsive:{ //Адаптация в зависимости от разрешения экрана
-									0:{
-										items:1
-									},
-									600:{
-										items:1
-									},
-									1000:{
-										items:1
-									}
-								},
 							    center: true,
 								itemsDesktop: 1,
 								slideBy: 'page',
@@ -39,11 +28,10 @@ $('.owl-carousel').each(function(i) {
 				                navText: ["<", ">"],
                                 /*autoplay:true, //Автозапуск слайдера*/
 								smartSpeed: 1000,
-								scrollPerPage: false,
+								scrollPerPage: true,
 				                startPosition: 0,
 								autoHeight: true,
 								autoWidth: true,
-								responsiveBaseWidth: window, 
 							   });
 			owl.on('mousewheel', '.owl-stage', function (e) {
 				if (e.deltaY<0) {
@@ -74,7 +62,7 @@ $('.owl-carousel').each(function(i) {
     <span class="real-show-hint" data-hint="#real-hint-1"><div class="fs1_1"><img src="img/cloud.png"><span>2007 год</br>Появление УКС</span></div></span>
     <div id="real-hint-1" class="real-hint">
 	<span class="hint-caption"><!--Начало--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Саши--></span>
     </div>
     <div class="rocket1">
@@ -83,9 +71,9 @@ $('.owl-carousel').each(function(i) {
     <div>
     <div class="fs2"><img src="img/people/circle (3).png"></div>
     <span class="real-show-hint1" data-hint1="#real-hint1-2"><div class="fs2_2"><img src="img/cloud.png"><span>2007 год</br>Появление УКС</span></div></span>
-    <div id="real-hint1-2" class="real-hint1">
+    <div id="real-hint1-2" class="real-hint">
 	<span class="hint1-caption"><!--Начало--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content"><!--История Тани--></span>
     </div>
     </div>
@@ -100,7 +88,7 @@ $('.owl-carousel').each(function(i) {
     <span class="real-show-hint" data-hint="#real-hint-3"><div class="fs1_1"><img src="img/cloud.png"><span>2008 год</br>Создание WIC</span></div></span>
     <div id="real-hint-3" class="real-hint">
 	<span class="hint-caption"><!--Создание--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Жени--></span>
     </div>
     </span>
@@ -109,10 +97,10 @@ $('.owl-carousel').each(function(i) {
     </div>
     <div>
     <div class="fs2"></div>
-    <span class="real-show-hint1" data-hint1="#real-hint1-4"><!--<div style="margin-right: 400px; float: left; margin-top: 200px;"></div>--><div class="fs2_2"> <img src="img/cloud.png"><span style="margin-top: -12px; margin-right: 35px; color: #c55a11;">2009 год</span></br><span style="margin-top:15px;">Переезд с Блюхера</br> на Ульяновскую</span></div></span>
-    <div id="real-hint1-4" class="real-hint1">
+    <span class="real-show-hint1" data-hint1="#real-hint1-4"><!--<div style="margin-right: 400px; float: left; margin-top: 200px;"></div>--><div class="fs2_2"> <img src="img/cloud.png"><span style="margin-top: -12px; margin-right: 35px; color: #c55a11;">2009 год</span></br><span style="right: 280px; margin-top:15px;">Переезд с Блюхера</br> на Ульяновскую</span></div></span>
+    <div id="real-hint1-4" class="real-hint">
 	<span class="hint1-caption">Переезд</span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content">История про переезд</span>
     </div>
     </div>
@@ -127,7 +115,7 @@ $('.owl-carousel').each(function(i) {
     <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span>2010 год</br>Создание ОПСЭД</span></div></span>
     <div id="real-hint-5" class="real-hint">
 	<span class="hint-caption"><!--2010--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Ксюши--></span>
     </div>
     <div class="rocket1">
@@ -136,9 +124,9 @@ $('.owl-carousel').each(function(i) {
     <div>
     <div class="fs2"><img src="img/people/circle (5).png"></div>
     <span class="real-show-hint1" data-hint1="#real-hint1-6"><div class="fs2_2"><img src="img/cloud.png"><span>2010 год</br>Создание АО</span></div></span>
-    <div id="real-hint1-6" class="real-hint1">
+    <div id="real-hint1-6" class="real-hint">
 	<span class="hint1-caption"><!--Начало--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content"><!--История Светы--></span>
     </div>
     </div>
@@ -153,7 +141,7 @@ $('.owl-carousel').each(function(i) {
     <span class="real-show-hint" data-hint="#real-hint-3"><div class="fs1_1"><img src="img/cloud.png"><span>2011 год</br>Создание Callider</span></div></span>
     <div id="real-hint-3" class="real-hint">
 	<span class="hint-caption"><!--Создание--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История--></span>
     </div>
     </span>
@@ -162,11 +150,11 @@ $('.owl-carousel').each(function(i) {
     </div>
     <div>
     <div class="fs2"></div>
-    <span class="real-show-hint1" data-hint1="#real-hint1-4"><!--<div style="margin-right: 400px; float: left; margin-top: 200px;"></div>--><div class="fs2_2"> <img src="img/cloud.png"><span style="margin-top: -12px; margin-right: 35px; color: #c55a11;">2011 год</span></br><span style="margin-top:15px;">Переезд с Ульяновской 
+    <span class="real-show-hint1" data-hint1="#real-hint1-4"><!--<div style="margin-right: 400px; float: left; margin-top: 200px;"></div>--><div class="fs2_2"> <img src="img/cloud.png"><span style="margin-top: -12px; margin-right: 35px; color: #c55a11;">2011 год</span></br><span style="margin-top:15px; right: 245px;">Переезд с Ульяновской 
 </br> на Радищева</span></div></span>
-    <div id="real-hint1-4" class="real-hint1">
+    <div id="real-hint1-4" class="real-hint">
 	<span class="hint1-caption"><!--Переезд--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content"><!--История про переезд--></span>
     </div>
     </div>
@@ -181,7 +169,7 @@ $('.owl-carousel').each(function(i) {
     <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span>2012 год</br>Создание ОТМ</span></div></span>
     <div id="real-hint-5" class="real-hint">
 	<span class="hint-caption"><!--2012--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Оли--></span>
     </div>
     <div class="rocket1">
@@ -190,9 +178,9 @@ $('.owl-carousel').each(function(i) {
     <div>
     <div class="fs2"><img src="img/people/circle (8).png"></div>
     <span class="real-show-hint1" data-hint1="#real-hint1-6"><div class="fs2_2"><img src="img/cloud.png"><span>2013 год</br>Создание ОКО</span></div></span>
-    <div id="real-hint1-6" class="real-hint1">
+    <div id="real-hint1-6" class="real-hint">
 	<span class="hint1-caption"><!--Начало--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content"><!--История Оли--></span>
     </div>
     </div>
@@ -204,10 +192,10 @@ $('.owl-carousel').each(function(i) {
 <div class="blocks">
     <div class="maintext">2013</div></br>
     <div class="fs1"><img src="img/people/circle (3).png"></div>
-    <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span style="left: 200px;">Сентябрь 2013</br>Создание отдела в Волгограде</span></div></span>
+    <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span style="top: 180px; left: 250px;">Сентябрь 2013</br>Создание отдела </br>в Волгограде</span></div></span>
     <div id="real-hint-5" class="real-hint">
 	<span class="hint-caption"><!--2013--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Тани--></span>
     </div>
     <div class="rocket1">
@@ -215,10 +203,10 @@ $('.owl-carousel').each(function(i) {
     </div>
     <div>
     <div class="fs2"><img src="img/people/circle (11).jpg"></div>
-    <span class="real-show-hint1" data-hint1="#real-hint1-6"><div class="fs2_2"><img src="img/cloud.png"><span style=" margin-top:-17px; right: 290px;">Октябрь 2013</br>Создание отдела в</br> Новосибирске</span></div></span>
-    <div id="real-hint1-6" class="real-hint1">
+    <span class="real-show-hint1" data-hint1="#real-hint1-6"><div class="fs2_2"><img src="img/cloud.png"><span style=" margin-top:-10px; right: 275px;">Октябрь 2013</br>Создание отдела в</br> Новосибирске</span></div></span>
+    <div id="real-hint1-6" class="real-hint">
 	<span class="hint1-caption"><!--Начало--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content"><!--История Оли--></span>
     </div>
     </div>
@@ -227,10 +215,10 @@ $('.owl-carousel').each(function(i) {
 <div class="blocks">
     <div class="maintext">2015</div></br>
     <div class="fs1"><img src="img/people/circle (6).png"></div>
-    <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span>сентябрь 2015</br>Создание отдела ОПЗ</span></div></span>
+    <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span style="left: 230px;">Cентябрь 2015</br>Создание отдела ОПЗ</span></div></span>
     <div id="real-hint-5" class="real-hint">
 	<span class="hint-caption"><!--2012--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Оли--></span>
     </div>
     <div class="rocket1">
@@ -238,10 +226,10 @@ $('.owl-carousel').each(function(i) {
     </div>
     <div>
     <div class="fs2"><img src="img/people/circle (1).png"></div>
-    <span class="real-show-hint1" data-hint1="#real-hint1-6"><div class="fs2_2"><img src="img/cloud.png"><span>Октябрь 2015</br>Создание отдела ЭДО</span></div></span>
-    <div id="real-hint1-6" class="real-hint1">
+    <span class="real-show-hint1" data-hint1="#real-hint1-6"><div class="fs2_2"><img src="img/cloud.png"><span style="right: 260px;">Октябрь 2015</br>Создание отдела ЭДО</span></div></span>
+    <div id="real-hint1-6" class="real-hint">
 	<span class="hint1-caption"><!--Начало--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint1-content"><!--История Оли--></span>
     </div>
     </div>
@@ -253,11 +241,11 @@ $('.owl-carousel').each(function(i) {
 <div class="blocks">
     <div class="maintext">2016</div></br>
     <div class="fs1"><img src="img/people/circle (9).png"></div>
-    <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span style="top: 200px; left: 240px;">Сентябрь 2016 года
+    <span class="real-show-hint" data-hint="#real-hint-5"><div class="fs1_1"><img src="img/cloud.png"><span style="top: 190px; left: 240px;">Сентябрь 2016 года
 </br>Разделение ОПСЭД </br>на УТО и ЭП</span></div></span>
     <div id="real-hint-5" class="real-hint">
 	<span class="hint-caption"><!--2013--></span><br/>
-    <img src="img/cloud.png">
+    <img src="img/cloud_white.png">
 		<span class="hint-content"><!--История Тани--></span>
     </div>
     <div class="rocket1">
